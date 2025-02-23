@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 06 | Responsive Images</title>
+    <meta name="description" content="WDD 230 - Responsive Images for Melina Reyes Rodriguez" />
+    <meta name="author" content="Melina Reyes Rodriguez" />
+    <meta name="copyright" content="Copyright 2025" />
+    <meta name="theme-color" content="#006EB6" />
+
+    <link rel="stylesheet" href="styles/responsive-images.css" />
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px )" srcset="images/mesa-temple-500x250.webp">
+                <source media="(max-width: 1000px )" srcset="images/mesa-temple-1000x500.webp">
+                <img src="images/mesa-temple-1280x750.webp" alt="Mesa Arizona LDS Temple" width="1280" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+
+</html>

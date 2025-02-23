@@ -1,0 +1,24 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    font-size: 24px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-align: center;
+  }
+</style>
