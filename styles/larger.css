@@ -1,23 +1,33 @@
 /* Larger Views ******************************/
 @media only screen and (min-width: 768px) {
+    
+    /* Hide hamburger menu on larger screens */
     #menu {
         display: none;
     }
+
+    /* Navigation adjustments */
     .navigation {
-        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
     .navigation li {
-        display: block;
-        flex: 1 1 100%;
+        display: inline-block;
+        margin: 0 15px;
     }
+
     .hero-title {
         padding: 1rem;
     }
-    .hero-title p{
+
+    .hero-title p {
         font-size: 1.25rem;
     }
+
     .la-card li a {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 
     .attribute {
@@ -27,17 +37,38 @@
     /* Section Card Area */
     .card-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 800px;
+        margin: 0 auto;
     }
+
+    .card {
+        padding: 20px;
+    }
+
     .card-grid section:nth-child(1) {
         grid-column: span 2;
     }
+
     .map {
-        grid-column: span 3;
+        grid-column: span 2;
+        text-align: center;
     }
+
+    /* Footer Layout */
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
     footer .footer-info {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
     }
 }
