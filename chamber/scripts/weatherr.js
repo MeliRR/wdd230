@@ -4,12 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${apiKey}`;
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&units=imperial&appid=${apiKey}`;
 
-    // Fetch current weather data
+    // Fetch current weather
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-            document.querySelector(".weather h2").textContent = `Current Weather in ${location}`;
-            document.querySelector(".weather p").textContent = `${data.weather[0].description}, ${data.main.temp}°F`;
+            document.getElementById("weather-location").textContent = location;
+            document.getElementById("weather-icon").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+            document.getElementById("weather-icon").alt = data.weather[0].description;
+            document.getElementById("weather-description").textContent = data.weather[0].description;
+            document.getElementById("weather-temp").textContent = data.main.temp;
+            document.getElementById("weather-feels").textContent = data.main.feels_like;
+            document.getElementById("weather-humidity").textContent = data.main.humidity;
         })
         .catch(error => console.error("Error fetching weather data:", error));
 
@@ -17,33 +22,14 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(forecastUrl)
         .then(response => response.json())
         .then(data => {
-            const forecastSection = document.createElement("section");
-            forecastSection.classList.add("forecast");
-            forecastSection.innerHTML = "<h2>3-Day Forecast</h2>";
-            
-            for (let i = 0; i < data.list.length; i += 8) { // Every 24 hours (approx.)
+            const forecastList = document.getElementById("forecast-list");
+            forecastList.innerHTML = "";
+            for (let i = 0; i < data.list.length; i += 8) {
                 let forecast = data.list[i];
                 let day = new Date(forecast.dt * 1000).toLocaleDateString("en-US", { weekday: "long" });
                 let temp = forecast.main.temp;
-                forecastSection.innerHTML += `<p>${day}: ${temp}°F</p>`;
+                forecastList.innerHTML += `<li>${day}: ${temp}°F</li>`;
             }
-            document.querySelector("main").appendChild(forecastSection);
         })
-        .catch(error => console.error("Error fetching forecast data:", error));
-
-    // Display Meet and Greet banner on specific days
-    const today = new Date().getDay(); // 0 = Sunday, 1 = Monday, etc.
-    if (today >= 1 && today <= 3) { // Monday, Tuesday, Wednesday
-        const banner = document.createElement("div");
-        banner.classList.add("meet-greet-banner");
-        banner.innerHTML = `
-            <p>Join us for a Chamber Meet and Greet on Wednesday at 7:00 p.m.!</p>
-            <button id="close-banner">❌</button>
-        `;
-        document.body.prepend(banner);
-        
-        document.getElementById("close-banner").addEventListener("click", () => {
-            banner.style.display = "none";
-        });
-    }
+        .catch(error => console.error("Error fetching forecast:", error));
 });
