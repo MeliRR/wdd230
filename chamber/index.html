@@ -9,20 +9,20 @@
         <!-- Page Title -->
         <title>Chamber of Commerce | Welcome to Our Community</title>
     
-        <!-- Meta Description: Brief description of the page's content -->
+        <!-- Meta Description -->
         <meta name="description" content="Join the Chamber of Commerce today! Discover opportunities, current events, and get involved in our vibrant business community.">
     
-        <!-- Meta Author: Your name or organization -->
+        <!-- Meta Author -->
         <meta name="author" content="Melina Reyes Rodriguez">
     
-        <!-- Social Media Meta Tags (for platforms like Facebook, Twitter, LinkedIn, etc.) -->
+        <!-- Social Media Meta Tags -->
         <meta property="og:title" content="Chamber of Commerce | Welcome to Our Community">
         <meta property="og:description" content="Join the Chamber of Commerce today! Discover opportunities, current events, and get involved in our vibrant business community.">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://yourwebsite.com/chamber/">
         <meta property="og:image" content="https://yourwebsite.com/images/social-media-image.jpg">
         
-        <!-- Twitter Card Meta Tags (for Twitter) -->
+        <!-- Twitter Meta Tags -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Chamber of Commerce | Welcome to Our Community">
         <meta name="twitter:description" content="Join the Chamber of Commerce today! Discover opportunities, current events, and get involved in our vibrant business community.">
@@ -39,6 +39,11 @@
     </head>
     
 <body>
+    <!-- Meet & Greet Banner -->
+    <div id="meet-greet-banner" class="meet-greet-banner" style="display: none;">
+        <p>Join us for a Chamber of Commerce Meet & Greet on Wednesday at 7:00 p.m.!</p>
+        <button id="close-banner">❌</button>
+    </div>
 
     <!-- Header Section -->
     <header>
@@ -57,13 +62,10 @@
             <li><a href="#">Join the Chamber</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-
-            <label class="switch">
-                <input type="checkbox" id="dark-mode-toggle">
-                <span class="slider"></span>
-              </label>
-              
-        
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider"></span>
+        </label>
     </nav>
 
     <!-- Main Content Section -->
@@ -84,9 +86,19 @@
             </ul>
         </section>
 
+        <!-- Updated Weather Section -->
         <section class="weather">
             <h2>Current Weather</h2>
-            <p>Sunny, 76°F</p>
+            <p id="weather-location">Loading...</p>
+            <figure>
+                <img id="weather-icon" src="" alt="Weather Icon" style="display: none;">
+                <figcaption id="weather-description"></figcaption>
+            </figure>
+            <p>Temperature: <span id="weather-temp"></span>°F</p>
+            <p>Feels Like: <span id="feels-like"></span>°F</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <h3>3-Day Forecast</h3>
+            <ul id="weather-forecast"></ul>
         </section>
 
         <section class="company-spotlights">
@@ -103,9 +115,9 @@
         <p>&copy; 2025 Chamber of Commerce</p>
     </footer>
 
+    <!-- JavaScript Files -->
     <script src="scripts/main.js"></script>
     <script src="scripts/toggle.js"></script>
-
-
+    <script src="scripts/weatherr.js"></script>
 </body>
 </html>
