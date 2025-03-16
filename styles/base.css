@@ -41,10 +41,11 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -52,6 +53,16 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+/* Hamburger Button (Mobile Only) */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 /* Main Content */
@@ -84,4 +95,41 @@ footer p {
 footer p:last-child {
     font-size: 0.9em;
     color: #ccc;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+    }
+
+    nav ul.mobile-menu {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Show hamburger icon on mobile */
+    .hamburger {
+        display: block;
+    }
+
+    /* Optional: Customize the appearance of the hamburger menu */
+    .hamburger {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    /* Add pseudo-element to nav list items */
+    nav ul li::after {
+        content: "→";
+        margin-left: 5px;
+    }
 }
