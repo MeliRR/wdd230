@@ -41,7 +41,7 @@
             <input type="checkbox" id="dark-mode-toggle">
             <span class="slider"></span>
         </div>
-        
+
         <section class="hero">
             <div class="hero-title">
                 <h2>Mesa Arizona Temple</h2>
@@ -75,18 +75,38 @@
         </section>
 
         <main>
-            <section id="weather-card">
-                <div id="weather-info">
-                    <h2>Weather in <span id="location-name">Mexico City</span></h2>
-                    <div id="weather-details">
-                        <img id="weather-icon" alt="Weather Icon">
-                        <div id="temp-container">
-                            <span id="temp"></span>°F
-                        </div>
-                        <p id="condition"></p>
-                    </div>
+            <section class="card">
+                <div class="card-header">
+
+                </div>
+                <div class="card-content">
+                    <ul class="la-card"></ul>
                 </div>
             </section>
+            <section class="card">
+                <div class="card-header">
+                   
+                </div>
+                <div class="card-content">
+                
+                    <article id="weather">
+                        <h4>Weather Right Now</h4>
+                        <p id="location"></p>
+
+                        <figure>
+                            <div class="temp-area"></div>
+                            <figcaption id="weather-description"></figcaption>
+                        </figure>
+
+                        <div class="alt-weather">
+                            <div class="weather-box">Feels Like:<span id="feels-like"></span></div>
+                            <div class="weather-box">Wind:<span id="wind-speed"></span></div>
+                            <div class="weather-box">Humidity:<span id="humidity"></span></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
         </main>
         
         

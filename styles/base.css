@@ -133,3 +133,57 @@ footer p:last-child {
         margin-left: 5px;
     }
 }
+
+/* Weather Article ********************************* */
+
+/* Weather Card */
+#weather {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Weather Title */
+#weather h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Weather Info */
+.temp-area {
+    font-size: 32px;
+    font-weight: bold;
+    color: #006EB6;
+    margin-top: 10px;
+}
+
+#weather-description {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #555;
+}
+
+/* Extra Weather Details */
+.alt-weather {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.weather-box {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
