@@ -1,32 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Meaningful Title</title>
-    <meta name="description" content="description of page using keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tijuana Temple - Responsive Images</title>
+    <meta name="description" content="Explore the Tijuana Temple with responsive images for different screen sizes.">
     <meta name="author" content="Melina Reyes">
     <link rel="stylesheet" href="styles/responsive-images.css">
 </head>
 
 <body>
     <header>
-        <h1>Page Title - Heading 1</h1>
+        <h1>Tijuana Temple - Responsive Images</h1>
     </header>
     <nav></nav>
     <main>
         <div class="hero">
             <picture>
-                <source media="(min-width: 500px)" srcset="images/hero-medium.jpg">
-                <source media=" (min-width:1000px )" srcset="images/hero-medium.jpg">
-                <img src="images/tijuana-temple.jpg" alt="Tijuana temple">
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Wide view of the Tijuana Temple at sunset" width="1500" height="750">
             </picture>
         </div>
     </main>
-    <footer>Melina Reyes Rodriguez| BYU-Idaho | WDD 230 - Fall 2025</footer>
-    <script src="scripts/"></script>
+    <footer>Melina Reyes Rodriguez<br>BYU-Idaho | WDD 230 - Winter 2025</footer>
+    
 </body>
 
 </html>

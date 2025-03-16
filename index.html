@@ -37,6 +37,22 @@
     </nav>
 
     <main>
+        <div class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider"></span>
+        </div>
+        
+        <section class="hero">
+            <div class="hero-title">
+                <h2>Mesa Arizona Temple</h2>
+            </div>
+            <picture>
+                <source media="(max-width: 400px )" srcset="images/mesa-temple-640x400.webp" />
+                <source media="(max-width: 960px )" srcset="images/mesa-temple-960x600.webp" />
+                <img src="images/mesa-temple-1280x800.webp" alt="Mesa Arizona LDS Temple" width="1280" height="800" />
+            </picture>
+        </section>
+
         <h2>WDD 230: Web Frontend Development</h2>
 
         <section class="card">
@@ -47,24 +63,33 @@
                 <li>Lesson 03 <a href="lesson03/images/combinators.png"> Combinators</a> | <a href="https://codepen.io/Melinita/pen/xbxOreB"> Pseudo-Elements</a> | <a href="https://codepen.io/Melinita/pen/KwKMqjZ">Responsive Menu</a></li>
                 <li>Lesson 04 <a href="https://codepen.io/Melinita/pen/NPWXLKb">Pseudo-class</a></li>
                 <li>Lesson 05<a href="lesson05/boom.html">Book of Mormon Chapters</a></li>
-                <li>Lesson 06 <a href="lesson06/images/landscape.webp">Webp Image Format</a> | </li>
+                <li>Lesson 06 <a href="lesson06/images/landscape.webp">Webp Image Format</a> | <a href="lesson06/responsive-images.html"> Responsive Images</a></li>
                 <li>Lesson 07</li>
                 <li>Lesson 08</li>
                 <li>Lesson 09</li>
-                <li>Lesson 10</li>
+                <li>Lesson 10<a href="lesson10/weather.html">WeatherApi</a></li>
                 <li>Lesson 11</li>
                 <li>Lesson 12</li>
                 <li>Lesson 13</li>
-           
             </ul>
         </section>
 
-        <section class="card">
-            <h3>Information</h3>
-            <p>Location: Mexico City, Mexico</p>
-            <p>🌞 76°F - Sunshine</p>
-            <p>Page Visits: <span id="visit-count">15</span></p>
-        </section>
+        <main>
+            <section id="weather-card">
+                <div id="weather-info">
+                    <h2>Weather in <span id="location-name">Mexico City</span></h2>
+                    <div id="weather-details">
+                        <img id="weather-icon" alt="Weather Icon">
+                        <div id="temp-container">
+                            <span id="temp"></span>°F
+                        </div>
+                        <p id="condition"></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        
 
         <section class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30100.21344755669!2d-99.17387204163376!3d19.43284630915295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8d4f06a3269%3A0xa79656ce3ffc06e5!2sCuauht%C3%A9moc%2C%20Mexico%20City%2C%20CDMX!5e0!3m2!1sen!2smx!4v1742103775770!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -78,8 +103,9 @@
 
     <!-- JavaScript Files -->
     <script src="scripts/getdates.js"></script>
-    <script src="scripts/menu-toggle.js"></script> 
+    <script src="scripts/toggle.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>

@@ -1,46 +1,33 @@
-// scripts.js
-
-// Get references to the DOM elements
+// set variables to the input, button, and .list elements.       
 const input = document.querySelector('#favchap');
-const addButton = document.querySelector('#addButton');
-const chapterList = document.querySelector('#chapterList');
+const button = document.querySelector('button');
+const list = document.querySelector('#list');
 
-// Add event listener to Add Chapter button
-addButton.addEventListener('click', () => {
-    const chapterName = input.value.trim(); // Get the chapter name from the input
+// add an envent with an arrow funtion
+button.addEventListener('click', () => {
 
-    if (chapterName === '') {
-        alert('Please enter a chapter name');
-        input.focus();
-        return;
+    // verificar que el input no este vacio
+    if (input.value != '') {
+        // creamos variables para el li y el boton de borrar
+        const li = document.createElement("li");
+        const deleteButton = document.createElement("button");
+
+        // le asignamos valores al li y al boton de borrar
+        li.textContent = input.value;
+        deleteButton.textContent = '❌';
+
+        // guardamos el input en la lista
+        list.append(li);
+        li.append(deleteButton);
+
+
+        deleteButton.addEventListener('click', () => {
+            list.removeChild(li);
+            input.focus();
+        });
+
+        // clean up the interface for the user
+        input.value = '';
     }
 
-    // Create a new list item for the chapter
-    const li = document.createElement('li');
-
-    // Create the delete button
-    const deleteButton = document.createElement('button');
-    deleteButton.textContent = '❌';
-    deleteButton.classList.add('delete');
-
-    // Set aria-label for the delete button
-    deleteButton.setAttribute('aria-label', `Remove ${chapterName}`);
-
-    // Add event listener to the delete button
-    deleteButton.addEventListener('click', () => {
-        li.remove(); // Remove the list item when the delete button is clicked
-    });
-
-    // Add chapter name to the list item
-    li.textContent = chapterName;
-
-    // Append the delete button to the list item
-    li.appendChild(deleteButton);
-
-    // Append the list item to the list
-    chapterList.appendChild(li);
-
-    // Clear the input and refocus
-    input.value = '';
-    input.focus();
 });
