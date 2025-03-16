@@ -1,0 +1,86 @@
+/* Reset or Normalize */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden by default, shown on mobile */
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Image */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the menu by default */
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    nav ul.mobile {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
