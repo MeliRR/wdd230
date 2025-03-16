@@ -1,28 +1,32 @@
+
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson 06 | Responsive Images</title>
-    <meta name="description" content="WDD 230 - Responsive Images for Melina Reyes Rodriguez" />
-    <meta name="author" content="Melina Reyes Rodriguez" />
-    <meta name="copyright" content="Copyright 2025" />
-    <meta name="theme-color" content="#006EB6" />
-
-    <link rel="stylesheet" href="styles/responsive-images.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Meaningful Title</title>
+    <meta name="description" content="description of page using keywords">
+    <meta name="author" content="Melina Reyes">
+    <link rel="stylesheet" href="styles/responsive-images.css">
 </head>
 
 <body>
+    <header>
+        <h1>Page Title - Heading 1</h1>
+    </header>
+    <nav></nav>
     <main>
         <div class="hero">
             <picture>
-                <source media="(max-width: 500px )" srcset="images/mesa-temple-500x250.webp">
-                <source media="(max-width: 1000px )" srcset="images/mesa-temple-1000x500.webp">
-                <img src="images/mesa-temple-1280x750.webp" alt="Mesa Arizona LDS Temple" width="1280" height="750">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.jpg">
+                <source media=" (min-width:1000px )" srcset="images/hero-medium.jpg">
+                <img src="images/tijuana-temple.jpg" alt="Tijuana temple">
             </picture>
         </div>
     </main>
+    <footer>Melina Reyes Rodriguez| BYU-Idaho | WDD 230 - Fall 2025</footer>
+    <script src="scripts/"></script>
 </body>
 
 </html>
