@@ -99,6 +99,36 @@
             "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Grupo_Carso_logo.svg/1200px-Grupo_Carso_logo.svg.png",
             "membership": "Gold",
             "since": "1990"
+        },
+        {
+            "name": "ZEBRA Technologies",
+            "description": "Logistics Technology Solutions",
+            "address": "José Vasconcelos 105, Hipódromo Condesa, Cuauhtémoc, Mexico City, MEX",
+            "phone": "(55) 1234 5678",
+            "url": "https://www.zebra.com",
+            "logo": "https://www.zebra.com/themes/custom/zebra/images/logo.svg",
+            "membership": "Gold",
+            "since": "2019"
+        },
+        {
+            "name": "OXXO",
+            "description": "Convenience Store",
+            "address": "Av. José María Castorena 470-A, Rosa Torres, Cuajimalpa de Morelos, Mexico City, MEX",
+            "phone": "(55) 1234 5678",
+            "url": "https://www.oxxo.com/",
+            "logo": "https://www.oxxo.com/img/oxxo-logo.svg",
+            "membership": "Bronze",
+            "since": "1999"
+        },
+        {
+            "name": "Suburbia",
+            "description": "Department Store",
+            "address": "Eje Central Lázaro Cárdenas 251, Guerrero, Cuauhtémoc, Mexico City, MEX",
+            "phone": "(55) 9876 5432",
+            "url": "https://www.suburbia.com.mx/",
+            "logo": "https://www.suburbia.com.mx/medias/logos/suburbia-logo.png?context=bWFzdGVyfGltYWdlc3w5NTMwM3xpbWFnZS9wbmd8aDczL2gwYi85OTk5OTY5ODQ0NzY5L3N1YnVyYmlhLWxvZ28ucG5nfDkzNzg4MzgxMzFiZTkwN2M5YjYzZjAwM2ExNDc2ZmY1YTVhMzA2YjVhNzAwYTc3MjQyZTIwMGE3ODg5Y2VhNjZj",
+            "membership": "Gold",
+            "since": "2023"
         }
     ]
 }
