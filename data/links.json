@@ -1,0 +1,119 @@
+{
+    "lessons": [
+      {
+        "lesson": "01",
+        "links": [
+          {
+            "url": "holygrail.html",
+            "title": "Holy Grail Layout"
+          }
+        ]
+      },
+      {
+        "lesson": "02",
+        "links": [
+          {
+            "url": "design-principles.html",
+            "title": "Web Design Principles"
+          },
+          {
+            "url": "media-query.html",
+            "title": "Media Queries"
+          }
+        ]
+      },
+      {
+        "lesson": "03",
+        "links": [
+          {
+            "url": "combinatorsPseudoElements.html",
+            "title": "Combinators | Pseudo-Elements"
+          },
+          {
+            "url": "responsiveMenu.html",
+            "title": "Responsive Menu"
+          }
+        ]
+      },
+      {
+        "lesson": "04",
+        "links": [
+          {
+            "url": "pseudoClass.html",
+            "title": "Pseudo-class"
+          }
+        ]
+      },
+      {
+        "lesson": "05",
+        "links": [
+          {
+            "url": "boom.html",
+            "title": "Book of Mormon Chapters"
+          }
+        ]
+      },
+      {
+        "lesson": "06",
+        "links": [
+          {
+            "url": "webpImageFormat.html",
+            "title": "WebP Image Format"
+          },
+          {
+            "url": "responsive-images.html",
+            "title": "Responsive Images"
+          }
+        ]
+      },
+      {
+        "lesson": "07",
+        "links": [
+          {
+            "url": "index.html",
+            "title": "Lazy Loading"
+          },
+          {
+            "url": "boom.html",
+            "title": "Data Persistence BOM"
+          }
+        ]
+      },
+      {
+        "lesson": "08",
+        "links": [
+          {
+            "url": "tablebuild.html",
+            "title": "HTML Tables"
+          },
+          {
+            "url": "forms.html",
+            "title": "Forms"
+          }
+        ]
+      },
+      {
+        "lesson": "09",
+        "links": [
+          {
+            "url": "new-ward-members.json",
+            "title": "JSON Ward Family"
+          },
+          {
+            "url": "prophets.html",
+            "title": "Prophets"
+          }
+        ]
+      },
+      {
+        "lesson": "10",
+        "links": [
+          {
+            "url": "weather.html",
+            "title": "Weather API"
+          }
+        ]
+      }
+    ]
+  }
+  
