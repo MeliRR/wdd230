@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Proposal Application</title>
+    <link rel="stylesheet" href="styles/forms.css">
+</head>
+<body>
+
+    <h1 class="form-heading">Course Proposal Application</h1>
+
+    <form action="/submit" method="POST" aria-labelledby="form-header">
+        <section class="form-container">
+            <h2 id="form-header">Submit Your Course Proposal</h2>
+
+            <!-- Course Title -->
+            <label for="course-title">Course Title:</label>
+            <input type="text" id="course-title" name="course-title" required placeholder="Enter the course title">
+
+            <!-- Instructor's Full Name -->
+            <label for="instructor-name">Instructor's Full Name:</label>
+            <input type="text" id="instructor-name" name="instructor-name" required placeholder="Enter your full name">
+
+            <!-- Instructor's Email Address -->
+            <label for="instructor-email">Instructor's Email Address:</label>
+            <input type="email" id="instructor-email" name="instructor-email" required placeholder="you@example.com">
+
+            <!-- Department -->
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="cs">Computer Science</option>
+                <option value="math">Mathematics</option>
+                <option value="biology">Biology</option>
+                <option value="history">History</option>
+                <option value="business">Business</option>
+                <option value="psychology">Psychology</option>
+            </select>
+
+            <!-- Proposed Duration -->
+            <label for="duration">Proposed Course Duration:</label>
+            <select id="duration" name="duration" required>
+                <option value="one-semester">One Semester</option>
+                <option value="two-semesters">Two Semesters</option>
+                <option value="summer">Summer Course</option>
+            </select>
+
+            <!-- Course Description -->
+            <label for="course-description">Course Description:</label>
+            <textarea id="course-description" name="course-description" rows="5" placeholder="Provide a brief description of the course..." required></textarea>
+
+            <!-- Course Objectives -->
+            <label for="course-objectives">Course Objectives:</label>
+            <textarea id="course-objectives" name="course-objectives" rows="5" placeholder="Outline the main objectives of the course..." required></textarea>
+
+            <!-- Course Prerequisites -->
+            <label for="prerequisites">Course Prerequisites:</label>
+            <input type="text" id="prerequisites" name="prerequisites" placeholder="List any course prerequisites">
+
+            <!-- Target Audience -->
+            <label for="audience">Target Audience:</label>
+            <textarea id="audience" name="audience" rows="3" placeholder="Who is the course aimed at?" required></textarea>
+
+            <!-- Preferred Start Date -->
+            <label for="start-date">Preferred Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <!-- Gender Radio Buttons (Optional for Instructor) -->
+            <fieldset>
+                <legend>Instructor's Gender (Optional):</legend>
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male"> Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="female"> Female
+                </label>
+                <label for="other">
+                    <input type="radio" id="other" name="gender" value="other"> Other
+                </label>
+            </fieldset>
+
+            <!-- Subscribe to Updates (Optional) -->
+            <label for="subscribe">
+                <input type="checkbox" id="subscribe" name="subscribe"> I would like to receive updates about my proposal status.
+            </label>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Proposal</button>
+        </section>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+    "wardInformation": {
+      "familyName": "Reyes",
+      "moveInDate": "2021-08-15",
+      "numberOfPeople": 7,
+      "visitedByBishopric": true,
+      "familyMembers": [
+        {
+          "name": "Miguel Angel Reyes",
+          "gender": "Male",
+          "birthdate": "1962-07-13"
+        },
+        {
+          "name": "Irma Rodriguez",
+          "gender": "Female",
+          "birthdate": "1962-06-19"
+        },
+        {
+          "name": "Miguel Reyes Rodriguez",
+          "gender": "Male",
+          "birthdate": "1988-05-20"
+        },
+        {
+          "name": "Miriam Reyes Rodriguez",
+          "gender": "Female",
+          "birthdate": "1992-08-27"
+        },
+        {
+          "name": "Melina Reyes Rodriguez",
+          "gender": "Female",
+          "birthdate": "1996-08-15"
+        },
+        {
+          "name": "Mayte Reyes Rodriguez",
+          "gender": "Female",
+          "birthdate": "2002-03-05"
+        }
+        
+      ]
+    }
+  }
+  

@@ -33,6 +33,8 @@
             <li><a href="chamber/">Chamber</a></li>
             <li><a href="https://www.byui.edu" target="_blank">BYU-Idaho</a></li>
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures?lang=eng#p=1" target="_blank">Scripture</a></li>
+            <li><a href="form.html">Rate my page Form</a></li>
+
         </ul>
     </nav>
 
@@ -65,14 +67,22 @@
                 <li>Lesson 05<a href="lesson05/boom.html">Book of Mormon Chapters</a></li>
                 <li>Lesson 06 <a href="lesson06/images/landscape.webp">Webp Image Format</a> | <a href="lesson06/responsive-images.html"> Responsive Images</a></li>
                 <li>Lesson 07 <a href="lesson07/index.html">Lazy Loading</a> | <a href="lesson07/boom.html">Data Persistance BOM</a>
-                <li>Lesson 08</li>
-                <li>Lesson 09</li>
+                <li>Lesson 08 <a href="lesson08/tablebuild.html"> HTML Tables</a> |<a  href="lesson08/forms.html"> Forms </a>
+                <li>Lesson 09 <a href="lesson09/new-ward-members.json"> JSon Ward Family</a> | <a href="lesson09/prophets.html">Propehts</a></li>
                 <li>Lesson 10<a href="lesson10/weather.html">WeatherApi</a></li>
             
             </ul>
         </section>
 
         <main>
+
+            <section class="card">
+                <h3>Page Visit Counter</h3>
+                <div id="visit-counter">
+                    <p>You have visited this page <span id="visit-count">0</span> times.</p>
+                </div>
+            </section>
+            
             <section class="card">
                 <div class="card-header">
 
@@ -124,6 +134,7 @@
     <script src="scripts/toggle.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/page-counter.js"></script>
 </body>
 
 </html>

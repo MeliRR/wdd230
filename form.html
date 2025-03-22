@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate My Page - Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/me.jpg" alt="Profile Image" id="profile-image">
+            <h1>Melina Reyes Rodriguez</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Rate My Page</a></li>
+                <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="chamber/">Chamber</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Rate My Page</h2>
+        <form action="record.html" method="GET" id="rate-page-form">
+            <!-- Username Field -->
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your username">
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password"
+                    pattern="^[a-zA-Z0-9]{8,}$" title="Password must be at least 8 characters long and only contain alphanumeric characters">
+            </div>
+
+            <!-- Confirm Password Field -->
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="you@byui.edu"
+                    pattern="^[a-zA-Z0-9._%+-]+@byui\.edu$" title="A valid byui.edu email address">
+            </div>
+
+            <!-- Page Rating Field -->
+            <div class="form-group">
+                <label for="page-rating">Page Rating (1-10):</label>
+                <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1" value="5"
+                    onchange="updateRatingValue()">
+                <span id="rating-value">5</span>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Submit Rating</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Melina Reyes Rodriguez, Mexico City, Mexico</p>
+    </footer>
+
+    <script>
+        // Function to update the value of the page rating dynamically
+        function updateRatingValue() {
+            var rating = document.getElementById("page-rating").value;
+            document.getElementById("rating-value").textContent = rating;
+        }
+
+        // Password Confirmation Validation
+        document.getElementById("rate-page-form").addEventListener("submit", function (e) {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+
+            if (password !== confirmPassword) {
+                e.preventDefault();
+                alert("Passwords do not match. Please try again.");
+                document.getElementById("password").focus();
+                document.getElementById("password").value = "";
+                document.getElementById("confirm-password").value = "";
+            }
+        });
+    </script>
+</body>
+
+</html>

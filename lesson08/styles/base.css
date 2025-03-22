@@ -1,0 +1,33 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 40%;
+    font-family: 'Lato', sans-serif;
+}
+table, tr, th, td {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-collapse: collapse;
+    padding: 10px;
+}
+td{
+    text-align: center;
+    
+}
+tbody tr:nth-child(even){
+    background-color:rgb(238,238,238);
+}
+table thead tr th:first-child{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+thead tr:last-child{
+    background-color:rgb(50,50,51);
+    color: white;
+}
+caption{
+    caption-side: bottom;
+    text-align: center;
+    font-size: 10pt;
+}
