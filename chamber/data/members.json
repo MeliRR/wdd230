@@ -1,0 +1,104 @@
+{
+    "businesses": [
+        {
+            "name": "Computacener Mexico",
+            "description": "Technology Consultant",
+            "address": "Av. P.º de la Reforma 412-Piso 5, Juárez, Cuauhtémoc, 06600 Mexico City, CDMX",
+            "phone": "(55) 55 6844 0700",
+            "url": "https://www.computacenter.com/",
+            "logo": "https://www.computacenter.com/sites/computacenter.com/files/inline-images/computacenter-logo_0.png",
+            "membership": "Gold",
+            "since": "2023"
+        },
+        {
+            "name": "Grupo Bimbo",
+            "description": "Food Company, Bakeries",
+            "address": "Avenida 16 de Septiembre 16, Colonia Centro, 06000 Mexico City, CDMX",
+            "phone": "(55) 5282 9999",
+            "url": "https://www.grupobimbo.com/",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Grupo_Bimbo_logo.svg/1200px-Grupo_Bimbo_logo.svg.png",
+            "membership": "Silver",
+            "since": "1945"
+        },
+        {
+            "name": "Cemex",
+            "description": "Building Materials, Cement",
+            "address": "Avenida Ricardo Margain 400, Valle Oriente, 66265 San Pedro Garza García, Mexico City, CDMX",
+            "phone": "(55) 5282 7777",
+            "url": "https://www.cemex.com/",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Cemex_logo.svg/1200px-Cemex_logo.svg.png",
+            "membership": "Gold",
+            "since": "1906"
+        },
+        {
+            "name": "Banorte",
+            "description": "Financial Services, Banking",
+            "address": "Av. Paseo de la Reforma 510, Juárez, 06600 Mexico City, CDMX",
+            "phone": "(55) 5282 9999",
+            "url": "https://www.banorte.com/",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Banorte_logo_2017.svg/800px-Banorte_logo_2017.svg.png",
+            "membership": "Gold",
+            "since": "1899"
+        },
+        {
+            "name": "UNAM (National Autonomous University of Mexico)",
+            "description": "Public Research University",
+            "address": "Avenida Universidad 3000, Coyoacán, 04510 Mexico City, CDMX",
+            "phone": "(55) 5622 7000",
+            "url": "https://www.unam.mx/",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/7/71/Logo_Universidad_Nacional_Aut%C3%B3noma_de_M%C3%A9xico.svg",
+            "membership": "Non-Profit",
+            "since": "1910"
+        },
+        {
+            "name": "Aeromexico",
+            "description": "Airline Services",
+            "address": "Av. Paseo de la Reforma 77, Mexico City, CDMX",
+            "phone": "(55) 9132 3015",
+            "url": "https://www.aeromexico.com/",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Aeromexico_logo.svg/1200px-Aeromexico_logo.svg.png",
+            "membership": "Silver",
+            "since": "1934"
+        },
+        {
+            "name": "Televisa",
+            "description": "Mass Media, Broadcasting",
+            "address": "Avenida Vasco de Quiroga 2000, Col. Santa Fe, Mexico City, CDMX",
+            "phone": "(55) 5261 6500",
+            "url": "https://www.televisa.com/",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Televisa_logo_2015.svg/1280px-Televisa_logo_2015.svg.png",
+            "membership": "Silver",
+            "since": "1973"
+        },
+        {
+            "name": "Cinemex",
+            "description": "Cinema Entertainment",
+            "address": "Av. Insurgentes Sur 3000, Mexico City, CDMX",
+            "phone": "(55) 5281 5000",
+            "url": "https://www.cinemex.net/",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Cinemex_Logo_2015.svg/1200px-Cinemex_Logo_2015.svg.png",
+            "membership": "Bronze",
+            "since": "1994"
+        },
+        {
+            "name": "Carlos Slim Foundation",
+            "description": "Philanthropy and Social Development",
+            "address": "Paseo de la Reforma 115, Mexico City, CDMX",
+            "phone": "(55) 5322 9900",
+            "url": "https://www.fundacioncarlosslim.org/",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Logo_Fundacion_Carlos_Slim.svg/800px-Logo_Fundacion_Carlos_Slim.svg.png",
+            "membership": "Non-Profit",
+            "since": "1986"
+        },
+        {
+            "name": "Grupo Carso",
+            "description": "Conglomerate, Retail, Infrastructure",
+            "address": "Paseo de la Reforma 1245, Mexico City, CDMX",
+            "phone": "(55) 5322 4600",
+            "url": "https://www.grupocarso.com.mx/",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Grupo_Carso_logo.svg/1200px-Grupo_Carso_logo.svg.png",
+            "membership": "Gold",
+            "since": "1990"
+        }
+    ]
+}

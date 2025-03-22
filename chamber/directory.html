@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:title" content="Monterrey Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://melirr.github.io/wdd230/chamber/images/1626392873055.webp">
+    <meta property="og:url" content="https://melirr.github.io/wdd230/chamber/index.html">
+    <meta name="author" content="Melina Reyes Rodriguez">
+    <meta name="description" content="Mexico City Chamber of Commerce, join us!">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Mexico City Chamber of Commerce Site</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normal.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img id="img-header" src="images/logo-mex.webp" alt="Mexico City">
+        </div>
+        <h4 id="currentDate"></h4>
+        <div id="mode">
+            <em> Dark Mode</em>🌃
+        </div>
+    </header>
+    <nav id="nav-menu">
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="discover.html" title="Discover">Discover</a></li>
+            <li><a href="directory.html" title="Directory" class="active">Directory</a></li>
+            <li><a href="join.html" titl e="Join">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <article id="cards" class="grid-directory"></article>
+    </main>
+    <footer>
+        <div id="contact-info">
+            <img id="footer-img" src="images/logo-mex.webp" loading="lazy" alt="Mex City Logo">
+            <h2>Mexico City Chamber of Commerce</h2>
+            <h4>Av. P.º de la Reforma 100, Juárez, Cuauhtémoc, 06600 Mexico City, MEX</h4>
+            <h4>contact@mmxchamber.com</h4>
+            <h4>+(33)43745128</h4>
+
+        </div>
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30100.21344755669!2d-99.17387204163376!3d19.43284630915295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8d4f06a3269%3A0xa79656ce3ffc06e5!2sCuauht%C3%A9moc%2C%20Mexico%20City%2C%20CDMX!5e0!3m2!1sen!2smx!4v1742103775770!5m2!1sen!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="dev-info">
+            <hr>
+            <p>&copy; 2025 Mexico City Chamber of Commerce</p>
+            <p>Melina Reyes Rodriguez</p>
+            <p>WDD230 Project</p>
+            <div id="lastModified"></div>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/currentDate.js"></script>
+    <script src="scripts/hamMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+
+</html>

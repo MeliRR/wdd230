@@ -1,184 +1,480 @@
-/* Reset or Normalize */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Header */
+header img {
+  width: 50%;
+  height: auto;
+}
+footer img {
+  width: 20%;
+  height: auto;
+}
+
 header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.hamburger {
-    font-size: 24px;
-    cursor: pointer;
-    display: none; /* Hidden by default, shown on mobile */
+/*Dark Mode*/
+
+/*HEADER GRID */
+
+section {
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+/*HERO IMG*/
+.hero-container {
+  position: relative;
 }
 
-/* Navigation */
-nav {
-    background-color: #333;
-    color: white;
+#hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+.hero-text {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+.call-to-action {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
-nav ul li {
-    display: inline-block;
-    padding: 15px;
+.cta-button {
+  background-color: whitesmoke;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+/*Google-Map*/
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
 }
 
-/* Hero Image */
-.hero img {
-    width: 100%;
-    height: auto;
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  padding: 10px;
 }
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        display: none; /* Hide the menu by default */
-        width: 100%;
-    }
-
-    .hamburger {
-        display: block; /* Show hamburger on mobile */
-    }
-
-    nav ul.mobile {
-        display: block;
-    }
-
-    nav ul li {
-        display: block;
-        text-align: left;
-        padding: 10px;
-    }
-}
-
-/* Main Content Styling */
-main {
-    padding: 20px;
-}
-
-/* Footer */
+/*FOOTER GRID*/
 footer {
-    background-color: #2c3e50;
-    color: white;
-    padding: 10px;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+#contact-info {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  place-items: center;
 }
 
-/* Dark Mode Toggle Switch Styles */
-.switch {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    width: 34px;
-    height: 20px;
-    border-radius: 34px;
-    background-color: #ccc;
-    transition: 0.4s;
-  }
-  
-  .slider:before {
-    content: "";
-    position: absolute;
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: 0.4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #333;
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(14px);
-  }
-  
-  /* Dark Mode Styles */
-  body.dark-mode {
-    background-color: black;
-    color: white;
-  }
-  
-#weather-card {
-    background: #f4f4f9;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px;
-    max-width: 400px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: Arial, sans-serif;
+#footer-img {
+  grid-row: 1/5;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
-#weather-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#weather-icon {
-    width: 80px;
-    height: 80px;
+
+
+/* HAMBURGUER MENU */
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 3px 7px 6px;
+  background-color: #eee;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
-#temp-container {
-    font-size: 48px;
-    font-weight: bold;
-    color: #1a73e8;
-    margin-top: 10px;
+#menu::before {
+  content: "☰";
 }
 
-h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #333;
+#menu.open::before {
+  content: "🔙";
 }
 
-#condition {
-    font-size: 1.2rem;
-    color: #666;
-    margin-top: 10px;
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #333;
+  color: #fff;
+}
+.navigation li {
+  display: none;
+}
+.navigation li a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.navigation li a:hover {
+  background-color: #bbb;
+  color: #333;
+  font-weight: 700;
 }
 
-/* Mobile Responsive: */
-@media (max-width: 768px) {
-    #weather-card {
-        width: 90%;
-    }
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+  display: block;
+  width: 100%;
+}
+.open li a {
+  display: block;
+}
+
+.active::before {
+  content: "📍 ";
+}
+
+.stuff {
+  margin: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #bed;
+  max-width: 580px;
+  height: 100vh;
+}
+
+/* DISCOVER PAGE */
+.discover-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+}
+figcaption {
+  text-align: center;
+  font-style: italic;
+  color: #333;
+}
+
+.aside {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+.aside h2 {
+  text-align: center;
+}
+gallery h2 {
+  text-align: center;
+  display: block;
+}
+gallery p {
+  display: block;
+}
+
+/* TABLE */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+figcaption {
+  width: 100%;
+}
+
+/*-----------------Directory----------------------*/
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: rgb(59, 59, 59);
+  text-align: center;
+}
+
+.menu button {
+  padding: 1rem;
+  font-weight: 700;
+}
+
+section {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: #eee;
+}
+
+#cards {
+  display: grid;
+  grid-gap: 5px;
+  align-items: center;
+}
+
+#cards section {
+  text-align: center;
+}
+
+#cards img {
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px #333;
+}
+
+#cards section > * {
+  margin: 0.1rem;
+}
+
+#cards h3 {
+  font-family: "Caveat", cursive;
+}
+
+
+
+.list-directory p {
+  display: none;
+}
+.list-directory section {
+  display: grid;
+  gap: 10px;
+  padding: 0.25rem;
+  width: 100%;
+}
+
+.list-directory section > * {
+  margin: 0 1rem;
+}
+
+.list-directory section img {
+  display: none; /* smaller viewports only */
+}
+
+.list-directory section h3 {
+  font-size: 1rem;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list-directory section:nth-child(even) {
+  background-color: rgb(197, 197, 197);
+}
+
+section h3 {
+  font-size: 1.5rem;
+}
+
+section p {
+  font-weight: 600;
+  font-size: smaller;
+}
+
+section a {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 0.85rem;
+  color: navy;
+  letter-spacing: 1.1pt;
+}
+
+img {
+  height: 75px;
+  max-width: 100%;
+}
+
+/* ----------------------------------------- */
+
+#join-list {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+#join-list h1 {
+  text-align: center;
+  padding: 5px;
+}
+#join-list h4 {
+  padding: 5px;
+}
+
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sbs {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.submitBtn {
+  background-color: #c4b323;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submitBtn:hover {
+  background-color: #2980b9;
+}
+
+strong{
+  font-weight: bold;
+}
+
+#weather-card{
+  text-align: center;
+  padding: 10px;
+}
+.weather{
+  border: 1px solid black;
+
+}
+.weather div > *{
+margin: 0.1rem;
+}
+
+.w-icon{
+  height: 45px;
+  max-width: 100%;
+} 
+
+.spotlight{
+  text-align: center;
+}
+#current-events > * {
+  margin: 0.2rem;
+}
+#event-icon{
+  display: block;
+  margin: auto;
+}
+
+#weather-icon{
+    height: 50px;
+    max-width: 100%;
+  }
+
+
+/* BANNER */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.announcement-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.close-button {
+  cursor: pointer;
+  padding: 5px;
+  background-color: #fff;
+  color: #4CAF50;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
 }
 
