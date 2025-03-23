@@ -1,75 +1,128 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Basic Styles */
+/* General styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
+    background-color: #f4f4f4; /* Light gray background for the body */
+    color: #333; /* Dark gray text color */
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    padding: 15px 20px;
+    background-color: #4CAF50; /* Green header background */
+    color: #fff; /* White text */
     text-align: center;
+    padding: 2rem 0;
 }
 
-h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+header h1 {
+    font-size: 2.5rem; /* Large font for the header */
+    margin: 0;
 }
 
-p {
+header p {
     font-size: 1.2rem;
 }
 
+/* Site structure */
 .site-structure {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 2rem;
 }
 
+/* Sections */
 .section {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
     font-size: 1.6rem;
-    margin-bottom: 10px;
-    color: #333; /* Dark Gray */
-    border-bottom: 2px solid #4CAF50; /* Green */
-    padding-bottom: 5px;
+    margin-top: 1rem;
 }
 
 ul {
     list-style-type: none;
-    padding-left: 20px;
+    padding-left: 0;
 }
 
 ul li {
-    margin-bottom: 12px;
-    font-size: 1.1rem;
-    color: #555; /* Slightly lighter gray */
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
-strong {
-    font-weight: bold;
+/* Wireframe Styles */
+.wireframe {
+    background-color: #e9e9e9; /* Light gray background for wireframe section */
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    font-family: monospace;
 }
 
+/* Footer Styles */
 footer {
-    margin-top: 30px;
+    background-color: #333; /* Dark gray footer background */
+    color: #fff; /* White text in footer */
     text-align: center;
-    padding: 10px;
-    background-color: #333; /* Dark Gray */
-    color: white;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
-    font-size: 1
+    font-size: 1rem;
+}
+
+/* Links */
+a {
+    color: #4CAF50; /* Green for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Wireframe Sketch Styles */
+pre {
+    background-color: #f4f4f4; /* Light background for preformatted text */
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    overflow-x: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Slightly smaller font for mobile */
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    pre {
+        font-size: 1rem; /* Smaller font for mobile wireframe sketches */
+    }
+}

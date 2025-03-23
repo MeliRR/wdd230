@@ -1,12 +1,12 @@
 {
     "businesses": [
         {
-            "name": "Computacener Mexico",
+            "name": "Computacenter Mexico",
             "description": "Technology Consultant",
             "address": "Av. P.º de la Reforma 412-Piso 5, Juárez, Cuauhtémoc, 06600 Mexico City, CDMX",
             "phone": "(55) 55 6844 0700",
             "url": "https://www.computacenter.com/",
-            "logo": "https://www.computacenter.com/sites/computacenter.com/files/inline-images/computacenter-logo_0.png",
+            "logo": "./images/computacenter.webp",
             "membership": "Gold",
             "since": "2023"
         },
@@ -16,7 +16,7 @@
             "address": "Avenida 16 de Septiembre 16, Colonia Centro, 06000 Mexico City, CDMX",
             "phone": "(55) 5282 9999",
             "url": "https://www.grupobimbo.com/",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Grupo_Bimbo_logo.svg/1200px-Grupo_Bimbo_logo.svg.png",
+            "logo": "./images/bimbo.webp",
             "membership": "Silver",
             "since": "1945"
         },
@@ -26,7 +26,7 @@
             "address": "Avenida Ricardo Margain 400, Valle Oriente, 66265 San Pedro Garza García, Mexico City, CDMX",
             "phone": "(55) 5282 7777",
             "url": "https://www.cemex.com/",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Cemex_logo.svg/1200px-Cemex_logo.svg.png",
+            "logo": "./images/cinemex.webp",
             "membership": "Gold",
             "since": "1906"
         },
@@ -36,7 +36,7 @@
             "address": "Av. Paseo de la Reforma 510, Juárez, 06600 Mexico City, CDMX",
             "phone": "(55) 5282 9999",
             "url": "https://www.banorte.com/",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Banorte_logo_2017.svg/800px-Banorte_logo_2017.svg.png",
+            "logo": "./images/banorte.webp",
             "membership": "Gold",
             "since": "1899"
         },
@@ -46,7 +46,7 @@
             "address": "Avenida Universidad 3000, Coyoacán, 04510 Mexico City, CDMX",
             "phone": "(55) 5622 7000",
             "url": "https://www.unam.mx/",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/7/71/Logo_Universidad_Nacional_Aut%C3%B3noma_de_M%C3%A9xico.svg",
+            "logo": "./images/unam-logo.webp",
             "membership": "Non-Profit",
             "since": "1910"
         },
@@ -56,7 +56,7 @@
             "address": "Av. Paseo de la Reforma 77, Mexico City, CDMX",
             "phone": "(55) 9132 3015",
             "url": "https://www.aeromexico.com/",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Aeromexico_logo.svg/1200px-Aeromexico_logo.svg.png",
+            "logo": "./images/aeromexico.webp",
             "membership": "Silver",
             "since": "1934"
         },
@@ -66,7 +66,7 @@
             "address": "Avenida Vasco de Quiroga 2000, Col. Santa Fe, Mexico City, CDMX",
             "phone": "(55) 5261 6500",
             "url": "https://www.televisa.com/",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Televisa_logo_2015.svg/1280px-Televisa_logo_2015.svg.png",
+            "logo": "./images/televisa.webp",
             "membership": "Silver",
             "since": "1973"
         },
@@ -76,7 +76,7 @@
             "address": "Av. Insurgentes Sur 3000, Mexico City, CDMX",
             "phone": "(55) 5281 5000",
             "url": "https://www.cinemex.net/",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Cinemex_Logo_2015.svg/1200px-Cinemex_Logo_2015.svg.png",
+            "logo": "./images/cinemex.webp",
             "membership": "Bronze",
             "since": "1994"
         },
@@ -86,7 +86,7 @@
             "address": "Paseo de la Reforma 115, Mexico City, CDMX",
             "phone": "(55) 5322 9900",
             "url": "https://www.fundacioncarlosslim.org/",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Logo_Fundacion_Carlos_Slim.svg/800px-Logo_Fundacion_Carlos_Slim.svg.png",
+            "logo": "/images/slim.webp",
             "membership": "Non-Profit",
             "since": "1986"
         },
@@ -96,7 +96,7 @@
             "address": "Paseo de la Reforma 1245, Mexico City, CDMX",
             "phone": "(55) 5322 4600",
             "url": "https://www.grupocarso.com.mx/",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Grupo_Carso_logo.svg/1200px-Grupo_Carso_logo.svg.png",
+            "logo": "./images/carso.webp",
             "membership": "Gold",
             "since": "1990"
         },
@@ -106,7 +106,7 @@
             "address": "José Vasconcelos 105, Hipódromo Condesa, Cuauhtémoc, Mexico City, MEX",
             "phone": "(55) 1234 5678",
             "url": "https://www.zebra.com",
-            "logo": "https://www.zebra.com/themes/custom/zebra/images/logo.svg",
+            "logo": "./images/zebra.webp",
             "membership": "Gold",
             "since": "2019"
         },
@@ -116,7 +116,7 @@
             "address": "Av. José María Castorena 470-A, Rosa Torres, Cuajimalpa de Morelos, Mexico City, MEX",
             "phone": "(55) 1234 5678",
             "url": "https://www.oxxo.com/",
-            "logo": "https://www.oxxo.com/img/oxxo-logo.svg",
+            "logo": "./images/oxxo-logo.webp",
             "membership": "Bronze",
             "since": "1999"
         },
@@ -126,7 +126,7 @@
             "address": "Eje Central Lázaro Cárdenas 251, Guerrero, Cuauhtémoc, Mexico City, MEX",
             "phone": "(55) 9876 5432",
             "url": "https://www.suburbia.com.mx/",
-            "logo": "https://www.suburbia.com.mx/medias/logos/suburbia-logo.png?context=bWFzdGVyfGltYWdlc3w5NTMwM3xpbWFnZS9wbmd8aDczL2gwYi85OTk5OTY5ODQ0NzY5L3N1YnVyYmlhLWxvZ28ucG5nfDkzNzg4MzgxMzFiZTkwN2M5YjYzZjAwM2ExNDc2ZmY1YTVhMzA2YjVhNzAwYTc3MjQyZTIwMGE3ODg5Y2VhNjZj",
+            "logo": "./images/suburbia-logo.webp",
             "membership": "Gold",
             "since": "2023"
         }
