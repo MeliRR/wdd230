@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;  /* Changed font */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,7 +17,7 @@ footer img {
 }
 
 header {
-  background-color: #333;
+  background-color: #337eb7;
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -88,7 +88,7 @@ section {
 }
 /*FOOTER GRID*/
 footer {
-  background-color: #333;
+  background-color: #2a63c6;
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -477,4 +477,3 @@ body {
   border-radius: 3px;
   font-weight: bold;
 }
-
