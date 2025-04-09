@@ -1,0 +1,146 @@
+@media (min-width: 37.5em) {
+    /* Grid */
+    header {
+      display: flex;
+      flex-flow: wrap;
+      align-items: center;
+      justify-content: space-around;
+      font-family: "Pacifico", sans-serif; /* Keep font consistent */
+    }
+  
+    .hero-container {
+      grid-column: 1/3;
+    }
+  
+    #contact-info img {
+      width: 30%;
+      height: auto;
+    }
+  
+    /* Hamburger Button */
+    #menu {
+      display: none;
+    }
+  
+    .navigation {
+      flex-direction: row;
+    }
+  
+    .navigation li {
+      display: block;
+      flex: 1 1 100%;
+    }
+  
+    .stuff {
+      margin: 1rem auto;
+    }
+  
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex: 1;
+      padding: 20px;
+    }
+  
+    .gallery img:hover {
+      box-shadow: 0 0 50px #1a535c; /* Add a beachy shadow */
+    }
+  
+    aside {
+      background-color: #f7fff7; /* Lighter background for consistency */
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      top: 0;
+    }
+  
+    #main-join {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  
+    #aside-join {
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+  
+    .list section {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      padding: 0.25rem;
+      width: 100%;
+    }
+  
+    .list-directory section {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      padding: 0.25rem;
+      width: 100%;
+    }
+  
+    .grid-directory {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    #weather-forecast {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    #main-index {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    #company-spotlight3 {
+      grid-column: 1/3;
+    }
+  
+    #current-events > * {
+      margin: 0.2rem;
+    }
+  
+    #event-icon {
+      display: block;
+      margin: auto;
+    }
+  
+    figcaption {
+      background-color: #f9f9f9;
+      max-width: fit-content;
+      margin: auto;
+    }
+  
+    /* Grid Medium View Index */
+    #weather {
+      grid-column: 2/3;
+    }
+  
+    #company {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+  
+    #rental-types {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+  
+    aside {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      padding: 20px;
+    }
+  
+    #contact-info img {
+      width: 200px;
+      height: auto;
+    }
+  }
+  

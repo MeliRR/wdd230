@@ -1,0 +1,12 @@
+@media (min-width: 60em) {
+
+    header img {
+      width: 30%;
+      height: auto;
+    }
+    #mode {
+      flex: 4;
+    }
+  
+  
+    }

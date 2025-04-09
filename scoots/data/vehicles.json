@@ -1,0 +1,61 @@
+{
+  "vehicles": [
+      {
+          "type": "Vehicle Type",
+          "capacity": "Max Persons",
+          "halfDayReserv": "Reservation - Half Day(3 hrs)",
+          "fullDayReserv": "Reservation - Full Day",
+          "halfDayWalkin": "Walk in - Half Day(3 hrs)",
+          "fullDayWalkin": "Walk in - Full Day"
+      },
+      {
+          "type": "Honda Metro Scooter",
+          "capacity": 1,
+          "halfDayReserv": "$20",
+          "fullDayReserv": "$30",
+          "halfDayWalkin": "$25",
+          "fullDayWalkin": "$35"
+      },
+      {
+          "type": "Honda Dio Scooter",
+          "capacity": 2,
+          "halfDayReserv": "$30",
+          "fullDayReserv": "$40",
+          "halfDayWalkin": "$35",
+          "fullDayWalkin": "$45"
+      },
+      {
+          "type": "Honda PCX150 Scooter",
+          "capacity": 2,
+          "halfDayReserv": "$40",
+          "fullDayReserv": "$50",
+          "halfDayWalkin": "$45",
+          "fullDayWalkin": "$55"
+      },
+      {
+          "type": "Honda Pioneer ATV",
+          "capacity": 4,
+          "halfDayReserv": "$50",
+          "fullDayReserv": "$70",
+          "halfDayWalkin": "$60",
+          "fullDayWalkin": "$80"
+      },
+      {
+          "type": "Jeep Wrangler - 4 door with a/c",
+          "capacity": 5,
+          "halfDayReserv": "$70",
+          "fullDayReserv": "$100",
+          "halfDayWalkin": "$85",
+          "fullDayWalkin": "$125"
+      },
+      {
+          "type": "Jeep Wrangler - 2 door",
+          "capacity": 4,
+          "halfDayReserv": "$60",
+          "fullDayReserv": "$85",
+          "halfDayWalkin": "$70",
+          "fullDayWalkin": "$90"
+      }
+      
+  ]
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta property="og:title" content="Scoots Rental in Cozumel">
+  <meta property="og:type" content="website">
+  <meta name="author" content="Melina Reyes Rodriguez">
+  <meta name="description"
+      content="Scoots Rental in Cozumel | Come to Cozumel ~ ScOOts has what you need to ScOOt around!">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scoots🛵🏖️ Cozumel motor scooter rental </title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/normal.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+      <div id="logo">
+        <img id="img-header" src="images/scoots-logo.webp" alt= "Scoots logo">
+    </div>
+    <div>
+        <img class="social-media" src="images/facebook-icon.webp.jpg" alt="Facebook Icon"> 
+        <img class="social-media" src="images/twitter-icon.webp.jpg" alt="X Icon">
+        <img class="social-media" src="images/instagram-icon.webp.jpg" alt="Instagram Icon">
+    </div>
+    </header>
+    <nav id="nav-menu">
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="rentals.html" title="Rentals">Rentals</a></li>
+            <li><a href="#" title="Reservations" class="active">Reservations</a></li>
+            <li><a href="contact.html" title="Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-index">
+        <form method="get" action="thank-you.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top"> Name*<input type="text" name="rdate" required></label>
+                <label class="top"> Phone*<input type="tel" name="Phone" placeholder="(81) 1234-56-78" required></label>
+
+                <label class="top"> email*<input type="email" name="email" required placeholder="hello@company.com"></label>
+                <label class="top"> Home State or Country*<input type="text" name="country" required></label>
+
+                <label class="top"> Cruise Line<input type="text" name="cruiseLine"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Reservation</legend>
+                <label class="top"> Reserve Date*<input type="date" name="rdate" required></label>
+                <label class="top"> Period*<input type="text" name="period" required></label>
+                <label class="top"> Rental Type*<input type="text" name="rType" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Comments</legend>
+                <label class="top"> Special/Accommodations<input type="text" name="cruiseLine"
+                        placeholder="ex. location of a drop-off request"></label>
+            </fieldset>
+            <input type="submit" value="Join Us" class="submitBtn">
+            </form>
+        <div>
+            <h2 id="reservations-title">Rental agreement information</h2>
+            <ul class="styled-list2">
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+       <div id="contact-info">
+      <img id="footer-img" src="images/scoots-logo.webp" loading="lazy" alt="Logo of Scoots Rental">
+      <h4>Cozumel, México </h4>
+      <h4>Contact us! </h4>
+      <h4>+52 999-331-282/h4>
+
+
+
+        </div>
+        <div id="dev-info">
+          <hr>
+          <p>&copy; BYU-Idaho </p>
+          <p>Melina Reyes Rodriguez</p>
+          <p>WDD230 Final Project</p>
+            <div id="lastModified"></div>
+        </div>
+    </footer>
+    <script src="scripts/hamMenu.js"></script>
+</body>
+
+</html>

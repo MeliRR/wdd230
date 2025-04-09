@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header img {
+  width: 50%;
+  height: auto;
+}
+footer img {
+  width: 20%;
+  height: auto;
+}
+
+/* --------- Header --------- */
+header {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1a535c;
+}
+
+.social-media{
+  height: 30px;
+  width: 30px;
+}
+
+/* HERO IMG */
+#img-header{
+  width: 180px;
+  height: 100%;
+}
+.hero-container {
+  position: relative;
+}
+
+#hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.call-to-action {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.cta-button {
+  background-color: #f7fff7;
+  color: #1a535c;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Google-Map */
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  padding: 10px;
+}
+
+/*------------------ Main -------------------*/
+#rental-types{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#rental-types img{
+  width: 150px;
+  height: 100%;
+  display: block;
+}
+
+.rental-types-tag{
+  grid-column: 1/3;
+}
+
+/*FOOTER GRID*/
+footer {
+  background-color: #f7fff7;
+  color: #1a535c;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+#contact-info {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  place-items: center;
+}
+
+#footer-img {
+  grid-row: 1/5;
+  width: 180px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HAMBURGUER MENU */
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 3px 7px 6px;
+  background-color: #eee;
+  color: #000;
+  position: absolute;
+  top: 1.8rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "🔙";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border: #000;
+  color: #fff;
+  background-color: #f7fff7;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation li a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #1a535c;
+  font-size:larger;
+}
+
+.navigation li a:hover {
+  background-color: #4ecdc4;
+  color: #fff;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+  display: block;
+  width: 100%;
+}
+
+.open li a {
+  display: block;
+}
+
+.active::before {
+  content: "📍 ";
+}
+
+.stuff {
+  margin: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e0f7f4;
+  max-width: 580px;
+  height: 100vh;
+}
+
+/*Weather Index*/
+#weather h2,h4{
+  text-align: center;
+}
+
+.weather-card {
+  text-align: center;
+  margin-bottom: 10px;
+  outline: solid 2px #000;
+  transition: outline 0.6s linear;
+  margin: 0.5em;
+  border-radius: 10px;
+}
+
+.weather-card:hover {
+  border-width: 10px;
+}
+
+/*index table*/
+.styled-list li {
+  background-color: #4ecdc4;
+  color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 10px;
+  max-width: 25rem;
+}
+
+.styled-list li:hover {
+  background-color: #1a535c;
+}
+
+.rental-types-tag {
+  background-color: #4ecdc4;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+
+/* Summary in Index */
+#rental-types {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#rental-types div {
+  text-align: center;
+  justify-content: center;
+}
+
+/* TABLE in Rentals*/
+.rentals {
+  text-align: center;
+  border-bottom: 100px;
+}
+
+#table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+figcaption {
+  width: 100%;
+}
+
+.catchy-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #4ecdc4;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.catchy-button:hover {
+  background-color: #1a535c;
+}
+
+/*----------------------- Announcement Banner------------------*/
+.announcement-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #4ecdc4;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.close-button {
+  cursor: pointer;
+  padding: 5px;
+  background-color: #f7fff7;
+  color: #1a535c;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/*----------------Form -------------------*/
+form fieldset {
+  border: 1pc solid #4ecdc4;
+  border-radius: 20px;
+  padding: 0.5rem 2%;
+  max-width: 25rem;
+}
+
+form legend {
+  color: #1a535c;
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #1a535c;
+  font-size: 0.8rem;
+}
+
+form label.top input, form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 25rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #4ecdc4;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 5px 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+  justify-content: center;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+/*---------reservation list -----------*/
+.styled-list2 li {
+  background-color: #f7fff7;
+  color: #1a535c;
+  padding: 10px;
+  margin: 5px 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 10px;
+  max-width: 25rem;
+  list-style-type: none;
+}
+
+#reservations-title {
+  text-align: center;
+}
+
+#contact-info1 h2 {
+  text-align: center;
+}
