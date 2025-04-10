@@ -1,5 +1,5 @@
 const url =
-"https://github.com/MeliRR/wdd230/blob/main/scoots/scripts/vehicles.js";
+"https://raw.githubusercontent.com/MeliRR/wdd230/refs/heads/main/scoots/data/vehicles.json";
 const table = document.querySelector("#table");
 
 async function getVehicleData() {
