@@ -1,189 +1,252 @@
-/* General Styles */
+/* === Fonts from Google Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Open+Sans&display=swap');
+
+/* === Base Reset === */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fdfaf6;
+    color: #333;
+    line-height: 1.6;
     text-align: center;
-    background-color: #f4f4f4;
 }
 
-/* Header */
+/* === Header === */
 header {
-    background-color: #2c3e50;
+    background-color: #008080;
     color: #fff;
-    padding: 20px;
+    padding: 1rem;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
-.profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#logo img {
+    height: 80px;
 }
 
-#profile-image {
-    width: 100px; /* Adjust size as needed */
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
+#company-name h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    margin: 0.5rem;
 }
 
-/* Navigation */
+.social-media {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/* === Navigation === */
 nav {
-    background-color: black;
-    padding: 10px 0;
+    background-color: #004d4d;
+    padding: 0.5rem 0;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-nav ul li {
-    margin: 0 15px;
+nav li {
+    margin: 0 10px;
 }
 
-nav ul li a {
-    color: white;
+nav a {
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
 }
 
-/* Hamburger Button (Mobile Only) */
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
+nav a:hover,
+nav a.active {
+    background-color: #00b3b3;
+    border-radius: 20px;
 }
 
-/* Main Content */
-main {
-    padding: 20px;
-}
-
-/* Cards */
-.card {
-    background-color: white;
-    padding: 20px;
-    margin: 10px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-}
-
-/* Footer */
-footer {
-    background-color: #2c3e50;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-footer p {
-    margin: 5px;
-}
-
-footer p:last-child {
-    font-size: 0.9em;
-    color: #ccc;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-    nav ul {
-        display: none; /* Hide menu by default */
-        flex-direction: column;
-        background-color: #333;
-        width: 100%;
-    }
-
-    nav ul.mobile-menu {
-        display: flex;
-    }
-
-    nav ul li {
-        padding: 15px;
-        text-align: center;
-    }
-
-    /* Show hamburger icon on mobile */
-    .hamburger {
-        display: block;
-    }
-
-    /* Optional: Customize the appearance of the hamburger menu */
-    .hamburger {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-
-    /* Add pseudo-element to nav list items */
-    nav ul li::after {
-        content: "→";
-        margin-left: 5px;
-    }
-}
-
-/* Weather Article ********************************* */
-
-/* Weather Card */
-#weather {
-    background-color: white;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+/* === Hero Section === */
+.hero-container {
+    position: relative;
     text-align: center;
-    font-family: Arial, sans-serif;
+    margin-bottom: 2rem;
 }
 
-/* Weather Title */
-#weather h4 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 10px;
+.hero-container img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* Weather Info */
-.temp-area {
-    font-size: 32px;
-    font-weight: bold;
-    color: #006EB6;
-    margin-top: 10px;
+.hero-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
 }
 
-#weather-description {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 5px;
+.cta-button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff4b4b;
+}
+
+/* === Section & Aside === */
+aside#company {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.styled-list {
+    text-align: left;
+    padding-left: 1.2rem;
+    list-style: disc;
+}
+
+.styled-list li {
+    margin-bottom: 1rem;
+}
+
+/* === Rental Types Section === */
+#rental-types {
+    padding: 2rem;
+    background-color: #eafaf1;
+}
+
+#rental-types h2,
+#rental-types h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: #00695c;
+}
+
+#rental-types div {
+    margin-bottom: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* === Weather Section === */
+#weather {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card {
+    margin-bottom: 1rem;
+}
+
+.weather-card h4,
+.weather-card h2 {
+    color: #00796b;
+}
+
+.weather-fig-captions {
+    font-size: 0.9rem;
     color: #555;
 }
 
-/* Extra Weather Details */
-.alt-weather {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
+/* === Footer === */
+footer {
+    background-color: #008080;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
 }
 
-.weather-box {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 14px;
-    font-weight: bold;
+footer h4,
+footer p {
+    margin: 0.3rem 0;
+}
+
+footer hr {
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 1rem 0;
+}
+
+/* === Announcement Banner === */
+.announcement-banner {
+    background-color: #ffe58a;
     color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-button {
+    background: #ff4b4b;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        font-size: 1.5rem;
+        top: 15%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
+
+    #rental-types div {
+        margin-bottom: 1rem;
+    }
+
+    aside#company {
+        padding: 1rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.2rem;
+    }
 }
